@@ -1,7 +1,9 @@
 package main
 
-import "github.com/alaminmahamud/design-patterns-go/creational_patterns/builder"
+import (
+	"github.com/alamin-mahamud/design-patterns-go/pkg/strategy"
+)
 
-func main () {
-	builder.RunBuilderPattern()
+func main() {
+	strategy.Run()
 }
