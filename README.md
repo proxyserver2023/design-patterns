@@ -109,4 +109,24 @@ End Testing Abstract Factory Pattern
 */
 ```
 
-* Builder Design Pattern
+## Builder Design Pattern
+Builder pattern separates the construction of a complex object from its representation so that the same construction process can create different representations.
+
+* Example
+  - This pattern is used by fast food restaurants to construct children’s meals.
+  - Children’s meals typically consist of a main item, a side item, a drink, and a toy (e.g., a hamburger, fries, Coke, and toy dinosaur).
+  - Note that there can be variation in the content of the children’s meal, but the construction process is the same.
+  - Whether a customer orders a hamburger, cheeseburger, or chicken, the process is the same.
+  - The employee at the counter directs the crew to assemble a main item, side item, and toy.
+  - These items are then placed in a bag. The drink is placed in a cup and remains outside of the bag
+
+* Checklist
+  - common input and many possible representations
+  - common input parsing in a reader class
+  - design a standard protocol for creating all possible output representations.
+  - capture all steps in a builder interface
+  - builder derived class for each target representation.
+  - client creates a Reader Object and a Builder object and registers the latter with the former.
+  - client asks the reader to construct
+  - client asks the builder to return the result.
+  [Contd.]
