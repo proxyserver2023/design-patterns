@@ -1,71 +1,77 @@
-package builder
+package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
-type Color string
-
-const (
-	BLUE Color = "blue"
-	RED        = "red"
-)
-
-type car struct {
-	topSpeed int
-	color    Color
+type Account struct {
+	accountNumber  string
+	interestRate   float64
+	openingBranch  string
+	openingBalance float64
+	ownerName      string
 }
 
-type carBuilder struct {
-	speedOption int
-	color       Color
+func (a *Account) String() string {
+	return fmt.Sprintf("Account Owner -> %s\n Opening balance -> %.2f", a.ownerName, a.openingBalance)
 }
 
-type Car interface {
-	Drive() string
-	Stop()  string
+type Builder interface {
+	build() Account
+	atRate(rate float64) Builder
+	withName(name string) Builder
+	atBranch(branch string) Builder
+	withOpeningBalance(balance float64) Builder
 }
 
-type CarBuilder interface {
-	TopSpeed(int) CarBuilder
-	Paint(Color)  CarBuilder
-	Build()       Car
+type AccountBuilder struct {
+	accountNumber  string
+	interestRate   float64
+	openingBranch  string
+	openingBalance float64
+	ownerName      string
 }
 
-func New() CarBuilder {
-	return &carBuilder{}
-}
-
-func (c *car) Drive() string {
-	return "Driving at speed: " + strconv.Itoa(c.topSpeed)
-}
-
-func (c *car) Stop() string {
-	return "Stopping a " + string(c.color) + " car"
-}
-
-func (cb *carBuilder) TopSpeed(speed int) CarBuilder {
-	cb.speedOption = speed
-	return cb
-}
-
-func (cb *carBuilder) Paint(color Color) CarBuilder {
-	cb.color = color
-	return cb
-}
-
-func (cb *carBuilder) Build() Car {
-	return &car{
-		topSpeed: cb.speedOption,
-		color:    cb.color,
+func (a *AccountBuilder) build() *Account {
+	return &Account{
+		accountNumber:  a.accountNumber,
+		interestRate:   a.interestRate,
+		openingBranch:  a.openingBranch,
+		openingBalance: a.openingBalance,
+		ownerName:      a.ownerName,
 	}
 }
 
-func RunBuilderPattern(){
-	builder := New()
-	car     := builder.TopSpeed(50).Paint(BLUE).Build()
+func (a *AccountBuilder) withOwner(ownerName string) *AccountBuilder {
+	a.ownerName = ownerName
+	return a
+}
 
-	fmt.Println(car.Drive())
-	fmt.Println(car.Stop())
+func (a *AccountBuilder) atRate(rate float64) *AccountBuilder {
+	a.interestRate = rate
+	return a
+}
+
+func (a *AccountBuilder) atBranch(branchName string) *AccountBuilder {
+	a.openingBranch = branchName
+	return a
+}
+
+func (a *AccountBuilder) withOpeningBalance(balance float64) *AccountBuilder {
+	a.openingBalance = balance
+	return a
+}
+
+func NewAccountBuilder(accountNumber string) *AccountBuilder {
+	return &AccountBuilder{
+		accountNumber: accountNumber,
+	}
+}
+
+func main() {
+	newAccount := NewAccountBuilder("12345ABCDEF0123").
+		withOwner("Alamin Mahamud").
+		atBranch("Manchester").
+		withOpeningBalance(1000000).
+		atRate(2.5).
+		build()
+	fmt.Println(newAccount)
 }
