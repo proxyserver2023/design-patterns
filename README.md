@@ -5,11 +5,11 @@ One of the most resourceful implementations of design patterns in golang
 ## TOC
 
 - [SOLID](#solid)
-        - [Single Responsibility Principle](#single-responsibility-principle)
-        - [Open Closed Principle](#open-closed-principle)
-        - [Liskov Substitution Principle](#liskov-substitution-principle)
-        - [Interface Segregation Principle](#interface-segregation-principle)
-        - [Dependency Inversion Principle](#dependency-inversion-principle)
+  - [Single Responsibility Principle](#single-responsibility-principle)
+  - [Open Closed Principle](#open-closed-principle)
+  - [Liskov Substitution Principle](#liskov-substitution-principle)
+  - [Interface Segregation Principle](#interface-segregation-principle)
+  - [Dependency Inversion Principle](#dependency-inversion-principle)
 - [Abstract Factory](#abstract-factory)
 - [Builder](#builder)
 - [Circuit Breaker](#circuit-breaker)
