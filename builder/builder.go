@@ -1,4 +1,4 @@
-package main
+package builder
 
 import "fmt"
 
@@ -66,7 +66,7 @@ func NewAccountBuilder(accountNumber string) *AccountBuilder {
 	}
 }
 
-func main() {
+func Run() {
 	newAccount := NewAccountBuilder("12345ABCDEF0123").
 		withOwner("Alamin Mahamud").
 		atBranch("Manchester").
