@@ -22,6 +22,13 @@ One of the most resourceful implementations of design patterns in golang
 
 ### Single Responsibility Principle
 
+* Generic Interface
+
+```go
+
+```
+
+
 ### Open Closed Principle
 ### Liskov Substitution Principle
 ### Interface Segregation Principle
