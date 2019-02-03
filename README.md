@@ -14,6 +14,7 @@ One of the most resourceful implementations of design patterns in golang
 - [Builder](#builder)
 - [Circuit Breaker](#circuit-breaker)
 - [Publish Subscribe](#publish-subscribe)
+- [Service Registry](#service-registry)
 - [Strategy](#strategy)
 
 ## SOLID
@@ -47,6 +48,10 @@ One of the most resourceful implementations of design patterns in golang
 [Placeholder ...]
 
 ### Publish Subscribe
+
+[Placeholder ...]
+
+### Service Registry
 
 [Placeholder ...]
 
