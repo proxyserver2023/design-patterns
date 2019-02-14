@@ -18,6 +18,7 @@ One of the most resourceful implementations of design patterns in golang
 - [Service Registry](#service-registry)
 - [Singleton](#singleton)
 - [Strategy](#strategy)
+- [UML](#uml)
 
 ## SOLID
 
@@ -259,3 +260,11 @@ func main() {
 ## Strategy
 
 [Placeholder ...]
+
+## UML
+
+### Requirement Specification
+
+1. Who is specifying it
+2. For Whom this is being specified
+3. What is specified.
