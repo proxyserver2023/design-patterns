@@ -13,6 +13,7 @@ One of the most resourceful implementations of design patterns in golang
 - [Abstract Factory](#abstract-factory)
 - [Builder](#builder)
 - [Circuit Breaker](#circuit-breaker)
+- [Prototype](#prototype)
 - [Publish Subscribe](#publish-subscribe)
 - [Service Registry](#service-registry)
 - [Singleton](#singleton)
@@ -47,6 +48,49 @@ One of the most resourceful implementations of design patterns in golang
 ## Circuit Breaker
 
 [Placeholder ...]
+
+## Prototype
+
+![Prototype Pattern](http://blog.ralch.com/media/golang/design-patterns/prototype.gif)
+
+The Prototype Pattern creates duplicate objects while keeping performance in mind.
+
+1. It requires implementing a prototype interface which tells to create a clone of the current object.
+2. It is used when creation of object directly is costly.
+
+For instance, an object is to be created after a costly database operation. We can cache the object, returns its clone on next request and update the database as and when needed thus reducing the database calls.
+
+**Example - 1**: generate different configuration files depending on our needs
+
+``` go
+package configurer
+
+type Config struct {
+	workDir string
+	user string
+}
+
+
+func NewConfig(user string, workDir string) Config {
+	return Config{
+		user: user,
+		workDir: workDir,
+	}
+}
+
+func (c Config) WithUser(user string) Config {
+	c.user = user
+	return c
+}
+
+func (c Config) WithWorkDir(workDir string) Config {
+	c.workDir = workDir
+	return c
+}
+
+```
+
+We want to be able to mutate the object without affecting its initial instance. The goal is to be able to generate different configuration files without loosing the flexibility of customizing them without mutation of the initial default configuration.
 
 ## Publish Subscribe
 
