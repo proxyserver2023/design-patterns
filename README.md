@@ -315,6 +315,12 @@ func main() {
 
 ![High Level Sequence Diagram](https://sourcemaking.com/files/sm/images/uml/img_63.jpg)
 
+### Class Diagram
+
+![Class Notations](https://www.tutorialspoint.com/uml/images/notation_class.jpg)
+
+![Simple class diagram](https://www.tutorialspoint.com/uml/images/uml_class_diagram.jpg)
+
 ## Credits
 
 - [UML Images - Sourcemaking](https://sourcemaking.com/uml)
