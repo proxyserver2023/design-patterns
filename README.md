@@ -79,11 +79,19 @@ One of the most resourceful implementations of design patterns in golang
 
 ### Abstract Factory
 
+Creates an instance of several families of classes.
+
 ### Builder
+
+Separates object construction from its representation.
 
 ### Factory
 
+Create an instance of several derived classes.
+
 ### Object Pool
+
+Avoid expensive acquisition and release of resources by recycling objects
 
 ### Prototype
 
