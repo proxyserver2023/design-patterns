@@ -81,6 +81,10 @@ One of the most resourceful implementations of design patterns in golang
 
 ### Builder
 
+### Factory
+
+### Object Pool
+
 ### Prototype
 
 ![Prototype Pattern](http://blog.ralch.com/media/golang/design-patterns/prototype.gif)
