@@ -400,6 +400,14 @@ Defines a new operation to a class without change.
 
 ### Use case
 
+What the system does for a user.
+
+- **Scenario**:
+  - A patient calls the clinic to make an appointment for a yearly checkup.
+  - The receptionist finds the nearest empty slot in the appointment book and schedules the appointment in that time slot.
+  ![Use case example](http://edn.embarcadero.com/article/images/31863/usecaseactorno3.gif)
+  ![Use case communication](http://edn.embarcadero.com/article/images/31863/actorsmultipleno3d.gif)
+
 #### Constructing Use Case
 
 - Collect information sources - How Am I supposed to know that?
@@ -449,6 +457,26 @@ Defines a new operation to a class without change.
 
 ![Simple class diagram](https://www.tutorialspoint.com/uml/images/uml_class_diagram.jpg)
 
+![Detailed Class Diagram](http://edn.embarcadero.com/article/images/31863/thumbclassdiagramno3d.gif)
+
+**Association** - a relationship between instances of the two classes. There is an association between two classes if an instance of one class must know about the other in order to perform its work. In a diagram, an association is a link connecting two classes.
+
+**Aggregation** - an association in which one class belongs to a collection. An aggregation has a diamond end pointing to the part containing the whole. In our diagram, Order has a collection of OrderDetails.
+
+**Generalization** - an inheritance link indicating one class is a superclass of the other. A generalization has a triangle pointing to the superclass. Payment is a superclass of Cash, Check, and Credit.
+
+An association has two ends. An end may have a role name to clarify the nature of the association. For example, an OrderDetail is a line item of each Order.
+
+A **navigability** arrow on an association shows which direction the association can be traversed or queried. An OrderDetail can be queried about its Item, but not the other way around. The arrow also lets you know who "owns" the association's implementation; in this case, OrderDetail has an Item. Associations with no navigability arrows are bi-directional.
+
+The **multiplicity** of an association end is the number of possible instances of the class associated with a single instance of the other end. Multiplicities are single numbers or ranges of numbers. In our example, there can be only one Customer for each Order, but a Customer can have any number of Orders.
+
+`0..1` -> zero or one instance. The notation `n..m` indicates `n to m` instances.
+`0..*  or  *` -> no limit on the number of instances (including none).
+`1` -> exactly one instance
+`1..*` -> at least one instance
+
 ## Credits
 
-- [UML Images - Sourcemaking](https://sourcemaking.com/uml)
+- [Sourcemaking](https://sourcemaking.com/uml)
+- [Randy Miller](http://edn.embarcadero.com/article/31863)
