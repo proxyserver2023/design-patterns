@@ -49,6 +49,7 @@ One of the most resourceful implementations of design patterns in golang
   - [Acitivity Diagram](#activity-diagram)
   - [Sequence Diagram](#sequence-diagram)
   - [Class Diagram](#class-diagram)
+- [Resources](#resources)
 - [Credits](#credits)
 
 ## SOLID Principles
@@ -475,6 +476,11 @@ The **multiplicity** of an association end is the number of possible instances o
 - `0..*  or  *` -> no limit on the number of instances (including none).
 - `1` -> exactly one instance
 - `1..*` -> at least one instance
+
+## Resources
+
+- [4 Page Cheatsheet](https://loufranco.com/wp-content/uploads/2012/11/cheatsheet.pdf)
+- [Good and Short Explanation](http://edn.embarcadero.com/article/31863)
 
 ## Credits
 
