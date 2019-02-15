@@ -477,10 +477,12 @@ The **multiplicity** of an association end is the number of possible instances o
 - `1` -> exactly one instance
 - `1..*` -> at least one instance
 
-**Class Diagram Concepts**
+#### Class Diagram Concepts
+
 ![class-diagram-concepts](./images/class-diagram-concepts.gif)
 
-**Uml Arrow Signs**
+#### Uml Arrow Signs
+
 ![uml-arrows](./images/uml-arrows.gif)
 
 ## Resources
