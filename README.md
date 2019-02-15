@@ -268,3 +268,24 @@ func main() {
 1. Who is specifying it
 2. For Whom this is being specified
 3. What is specified.
+
+### Constructing Use Case
+
+- Collect information sources - How Am I supposed to know that?
+- Identify potential actors - Which partners and customers use the goods and services of the business system
+- Identify potential business use cases - Which goods and services actor can draw upon?
+- Connect business use cases - Who can make use of what goods and services of the business system?
+- Describe Actors - Who or what do the actors represent?
+- Search for more business use cases - what else needs to be done?
+- Edit Business use cases - what actually has to be included in a business use case?
+- Document business use cases - What happens in a business use case?
+- Model Relationships between business use cases - What activities are conducted repeatedly?
+- Verify the view - Is everything correct?
+
+### Activity Diagram
+
+![Activity Diagram](https://sourcemaking.com/files/sm/images/uml/img_33.jpg)
+@credits - Sourcemaking
+
+![Activity Diagram for Passenger checks in](https://sourcemaking.com/files/sm/images/uml/img_34.jpg)
+@credits - Sourcemaking
