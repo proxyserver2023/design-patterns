@@ -19,6 +19,7 @@ One of the most resourceful implementations of design patterns in golang
 - [Singleton](#singleton)
 - [Strategy](#strategy)
 - [UML](#uml)
+- [Credits](#credits)
 
 ## SOLID
 
@@ -313,3 +314,7 @@ func main() {
 - Verify the view—Is everything correct?
 
 ![High Level Sequence Diagram](https://sourcemaking.com/files/sm/images/uml/img_63.jpg)
+
+## Credits
+
+- [UML Images - Sourcemaking](https://sourcemaking.com/uml)
