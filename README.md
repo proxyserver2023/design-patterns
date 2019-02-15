@@ -4,7 +4,7 @@ One of the most resourceful implementations of design patterns in golang
 
 ## TOC
 
-- [SOLID](#solid)
+- [SOLID Principles](#solid-principles)
   - [Single Responsibility Principle](#single-responsibility-principle)
   - [Open Closed Principle](#open-closed-principle)
   - [Liskov Substitution Principle](#liskov-substitution-principle)
@@ -51,7 +51,7 @@ One of the most resourceful implementations of design patterns in golang
   - [Class Diagram](#class-diagram)
 - [Credits](#credits)
 
-## SOLID
+## SOLID Principles
 
 ![SOLID Principles](./images/solid.png)
 
@@ -75,15 +75,13 @@ One of the most resourceful implementations of design patterns in golang
 
 ![Dependency-inversion-principle](https://cdn-images-1.medium.com/max/800/1*hiGBlzGmh3aSsArKkJZp6A.png)
 
-## Abstract Factory
+### Abstract Factory
 
-[Placeholder ...]
+### Builder
 
-## Builder
+## Microservices
 
-[Placeholder ...]
-
-## Circuit Breaker
+### Circuit Breaker
 
 [Placeholder ...]
 
