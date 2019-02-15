@@ -269,7 +269,9 @@ func main() {
 2. For Whom this is being specified
 3. What is specified.
 
-### Constructing Use Case
+### Use case
+
+#### Constructing Use Case
 
 - Collect information sources - How Am I supposed to know that?
 - Identify potential actors - Which partners and customers use the goods and services of the business system
@@ -285,7 +287,29 @@ func main() {
 ### Activity Diagram
 
 ![Activity Diagram](https://sourcemaking.com/files/sm/images/uml/img_33.jpg)
-@credits - Sourcemaking
 
 ![Activity Diagram for Passenger checks in](https://sourcemaking.com/files/sm/images/uml/img_34.jpg)
-@credits - Sourcemaking
+
+#### Constructing activity diagrams in the external view
+
+- collect information sources - how am i supposed to know that?
+- find activities and actions - what has to be done when actors draw upon offered goods and services?
+- adopt actors from business use cases - who is responsible for each action?
+- connect actions - in which order are actions processed?
+- refine activitiess - do any other activity diagrams have to be added?
+- verify the view - is everything correct?
+
+### Sequence Diagrams
+
+![elements-of-the-sequence-diagram](https://sourcemaking.com/files/sm/images/uml/img_55.jpg)
+
+#### Constructing Sequence Diagram
+
+- Designate actors and business system—Who is taking part?
+- Designate initiators—Who starts interactions?
+- Describe the message exchange between actors and business system—Which messages are being exchanged?
+- Identify the course of interactions—What is the order?
+- Insert additional information—What else is important?
+- Verify the view—Is everything correct?
+
+![High Level Sequence Diagram](https://sourcemaking.com/files/sm/images/uml/img_63.jpg)
