@@ -282,6 +282,40 @@ func main() {
 
 ## Structural Patterns
 
+Ease the design by identifying a simple way to realize relationships between entities.
+
+### [Adapter](#adapter)
+
+Match interfaces of different classes.
+
+### [Bridge](#bridge)
+
+Separate an object's interface from it's implementation
+
+### [Composite](#composite)
+
+A tree structure of simple and composite objects.
+
+### [Decorator](#decorator)
+
+Add responsibilities to objects dynamically.
+
+### [Facade](#facade)
+
+A single class that represents an entire subsystem.
+
+### [Flyweight](#flyweight)
+
+A fine-grained instance used for efficient sharing.
+
+### [Private Class Data](#private-class-data)
+
+Restricts accessor/mutator access.
+
+### [Proxy](#proxy)
+
+An object representing another object.
+
 ## Behavioural Patterns
 
 ### [Chain of responsibility](#chain-of-responsibility)
