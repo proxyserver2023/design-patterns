@@ -4,6 +4,12 @@ One of the most resourceful implementations of design patterns in golang
 
 ## TOC
 
+- [SOLID](#solid)
+  - [Single Responsibility Principle](#single-responsibility-principle)
+  - [Open Closed Principle](#open-closed-principle)
+  - [Liskov Substitution Principle](#liskov-substitution-principle)
+  - [Interface Segregation Principle](#interface-segregation-principle)
+  - [Dependency Inversion Principle](#dependency-inversion-principle)
 - [Creational](#creational)
   - [Abstract Factory](#abstract-factory)
   - [Builder](#builder)
@@ -33,22 +39,16 @@ One of the most resourceful implementations of design patterns in golang
   - [Strategy](#strategy)
   - [Template Method](#template-method)
   - [Visitor](#visitor)
-
-- [SOLID](#solid)
-  - [Single Responsibility Principle](#single-responsibility-principle)
-  - [Open Closed Principle](#open-closed-principle)
-  - [Liskov Substitution Principle](#liskov-substitution-principle)
-  - [Interface Segregation Principle](#interface-segregation-principle)
-  - [Dependency Inversion Principle](#dependency-inversion-principle)
-- [Abstract Factory](#abstract-factory)
-- [Builder](#builder)
-- [Circuit Breaker](#circuit-breaker)
-- [Prototype](#prototype)
-- [Publish Subscribe](#publish-subscribe)
-- [Service Registry](#service-registry)
-- [Singleton](#singleton)
-- [Strategy](#strategy)
+- [Microservices](#microservices)
+  - [Circuit Breaker](#circuit-breaker)
+  - [Publish Subscribe](#publish-subscribe)
+  - [Service Registry](#service-registry)
 - [UML](#uml)
+  - [Requirement Specification](#requirement-specification)
+  - [Use case](#use-case)
+  - [Acitivity Diagram](#activity-diagram)
+  - [Sequence Diagram](#sequence-diagram)
+  - [Class Diagram](#class-diagram)
 - [Credits](#credits)
 
 ## SOLID
@@ -57,16 +57,14 @@ One of the most resourceful implementations of design patterns in golang
 
 ### Single Responsibility Principle
 
-* Generic Interface
-
-```go
-
-```
-
+- Generic Interface
 
 ### Open Closed Principle
+
 ### Liskov Substitution Principle
+
 ### Interface Segregation Principle
+
 ### Dependency Inversion Principle
 
 ## Abstract Factory
@@ -87,8 +85,8 @@ One of the most resourceful implementations of design patterns in golang
 
 The Prototype Pattern creates duplicate objects while keeping performance in mind.
 
-1. It requires implementing a prototype interface which tells to create a clone of the current object.
-2. It is used when creation of object directly is costly.
+- It requires implementing a prototype interface which tells to create a clone of the current object.
+- It is used when creation of object directly is costly.
 
 For instance, an object is to be created after a costly database operation. We can cache the object, returns its clone on next request and update the database as and when needed thus reducing the database calls.
 
@@ -134,12 +132,11 @@ We want to be able to mutate the object without affecting its initial instance. 
 
 ## Singleton
 
-1. only one instance
-2. global point to access the instance
-3. initialization on first use
+- only one instance
+- global point to access the instance
+- initialization on first use
 
 If app needs one and only one instance of an object.
-
 
 ``` go
 type privateStructure struct {
@@ -159,7 +156,6 @@ func GetSingletonInstance() privateStructure {
 
 	return singleVariable
 }
-
 ```
 
 A thread-safe solution might be
@@ -245,6 +241,7 @@ func GetInstance() *singleton {
 ```
 
 Example Code
+
 ``` go
 package main
 
@@ -277,15 +274,16 @@ func main() {
 
 }
 ///////////////////////////////////////////
-1st ->  1
-2nd ->  1
-3rd ->  1
-1st ->  20
-2nd ->  20
-3rd ->  20
-1st ->  10
-2nd ->  10
-3rd ->  10
+// 1st ->  1
+// 2nd ->  1
+// 3rd ->  1
+// 1st ->  20
+// 2nd ->  20
+// 3rd ->  20
+// 1st ->  10
+// 2nd ->  10
+// 3rd ->  10
+////////////////////////////////////////////
 ```
 
 ## Strategy
@@ -296,9 +294,9 @@ func main() {
 
 ### Requirement Specification
 
-1. Who is specifying it
-2. For Whom this is being specified
-3. What is specified.
+- Who is specifying it
+- For Whom this is being specified
+- What is specified.
 
 ### Use case
 
