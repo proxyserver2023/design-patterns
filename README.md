@@ -75,17 +75,13 @@ One of the most resourceful implementations of design patterns in golang
 
 ![Dependency-inversion-principle](https://cdn-images-1.medium.com/max/800/1*hiGBlzGmh3aSsArKkJZp6A.png)
 
+## Creational Patterns
+
 ### Abstract Factory
 
 ### Builder
 
-## Microservices
-
-### Circuit Breaker
-
-[Placeholder ...]
-
-## Prototype
+### Prototype
 
 ![Prototype Pattern](http://blog.ralch.com/media/golang/design-patterns/prototype.gif)
 
@@ -128,15 +124,7 @@ func (c Config) WithWorkDir(workDir string) Config {
 
 We want to be able to mutate the object without affecting its initial instance. The goal is to be able to generate different configuration files without loosing the flexibility of customizing them without mutation of the initial default configuration.
 
-## Publish Subscribe
-
-[Placeholder ...]
-
-## Service Registry
-
-[Placeholder ...]
-
-## Singleton
+### Singleton
 
 - only one instance
 - global point to access the instance
@@ -292,7 +280,67 @@ func main() {
 ////////////////////////////////////////////
 ```
 
-## Strategy
+## Structural Patterns
+
+## Behavioural Patterns
+
+### [Chain of responsibility](#chain-of-responsibility)
+
+A way of passing a request to a chain of objects.
+
+### [Command](#command)
+
+Encapsulates a command request as an object
+
+### [Interpreter](#interpreter)
+
+A way to include language elements in a program.
+
+### [Iterator](#iterator)
+
+Sequentially access the elements of a collection.
+
+### [Mediator](#mediator)
+
+Defines simplified communication between classes.
+
+### [Memento](#memento)
+
+Capture and restore an object's internal state.
+
+### [Null Object](#null-object)
+
+Designed to act as a default value of an object.
+
+### [Observer](#observer)
+
+A way of notifying change to a number of classes.
+
+### [State](#state)
+
+Alter an object's behaviour when it's state change.
+
+### [Strategy](#strategy)
+
+Encapsulates an algorithm inside a class.
+
+### [Template Method](#template-method)
+
+Defer the exact steps of an algorithm to a subclass.
+
+### [Visitor](#visitor)
+
+Defines a new operation to a class without change.
+
+## Microservices
+
+### Circuit Breaker
+
+### Publish Subscribe
+
+[Placeholder ...]
+
+### Service Registry
 
 [Placeholder ...]
 
