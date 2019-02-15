@@ -1,5 +1,6 @@
 package main
 
+// RectangleAdapter - ...
 type RectangleAdapter struct {
 	rect shape
 }
