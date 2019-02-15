@@ -471,10 +471,10 @@ A **navigability** arrow on an association shows which direction the association
 
 The **multiplicity** of an association end is the number of possible instances of the class associated with a single instance of the other end. Multiplicities are single numbers or ranges of numbers. In our example, there can be only one Customer for each Order, but a Customer can have any number of Orders.
 
-`0..1` -> zero or one instance. The notation `n..m` indicates `n to m` instances.
-`0..*  or  *` -> no limit on the number of instances (including none).
-`1` -> exactly one instance
-`1..*` -> at least one instance
+- `0..1` -> zero or one instance. The notation `n..m` indicates `n to m` instances.
+- `0..*  or  *` -> no limit on the number of instances (including none).
+- `1` -> exactly one instance
+- `1..*` -> at least one instance
 
 ## Credits
 
