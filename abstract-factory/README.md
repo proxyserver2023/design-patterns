@@ -1,10 +1,17 @@
-### Abstract Factory
-* Intent
+# Abstract Factory
+
+- Intent
   - Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
   - A hierarchy that encapsulates: many possible “platforms”, and the construction of a suite of “products”.
   - The new operator considered harmful.
-* Discussion
+- Discussion
   - The “factory” object has the responsibility for providing creation services for the entire platform family. Clients never create platform objects directly, they ask the factory to do that for them.
+
+## Class Diagram
+
+![Abstract Factory](https://sourcemaking.com/files/v2/content/patterns/Abstract_Factory.png)
+
+## Example
 
 [Golang Abstract Factory Example](https://play.golang.org/p/85I07-GqVKx)
 
