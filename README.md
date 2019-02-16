@@ -26,7 +26,6 @@ One of the most resourceful implementations of design patterns in golang
   - [Flyweight](#flyweight)
   - [Private Class Data](#private-class-data)
   - [Proxy](#proxy)
-  - [Abstract Document](#abstract-document)
 - [Behavioural](#behavioural)
   - [Chain of responsibility](#chain-of-responsibility)
   - [Command](#command)
@@ -40,7 +39,6 @@ One of the most resourceful implementations of design patterns in golang
   - [Strategy](#strategy)
   - [Template Method](#template-method)
   - [Visitor](#visitor)
-  - [Acyclic Visitor](#acyclic-visitor)
 - [Microservices](#microservices)
   - [Circuit Breaker](#circuit-breaker)
   - [Publish Subscribe](#publish-subscribe)
@@ -51,6 +49,8 @@ One of the most resourceful implementations of design patterns in golang
   - [Acitivity Diagram](#activity-diagram)
   - [Sequence Diagram](#sequence-diagram)
   - [Class Diagram](#class-diagram)
+- [Abstract Document](#abstract-document)
+- [Acyclic Visitor](#acyclic-visitor)
 - [Resources](#resources)
 - [Credits](#credits)
 
@@ -331,10 +331,6 @@ Restricts accessor/mutator access.
 
 An object representing another object.
 
-### [Abstract Document](#abstract-document)
-
-Add Property on the fly.
-
 ## Behavioural Patterns
 
 ### [Chain of responsibility](#chain-of-responsibility)
@@ -384,10 +380,6 @@ Defer the exact steps of an algorithm to a subclass.
 ### [Visitor](#visitor)
 
 Defines a new operation to a class without change.
-
-### [Acyclic Visitor](#acyclic-visitor)
-
-Allow new functions to be added to existing class hierarchies without affecting those hierarchies, and without creating the troublesome dependency cycles that are inherent to the `GOF VISITOR` Pattern.
 
 ## Microservices
 
@@ -494,6 +486,14 @@ The **multiplicity** of an association end is the number of possible instances o
 #### Uml Arrow Signs
 
 ![uml-arrows](./images/uml-arrows.gif)
+
+## [Abstract Document](#abstract-document)
+
+Add Property on the fly.
+
+## [Acyclic Visitor](#acyclic-visitor)
+
+Allow new functions to be added to existing class hierarchies without affecting those hierarchies, and without creating the troublesome dependency cycles that are inherent to the `GOF VISITOR` Pattern.
 
 ## Resources
 
