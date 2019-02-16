@@ -18,7 +18,6 @@ One of the most resourceful implementations of design patterns in golang
   - [Prototype](#prototype)
   - [Singleton](#singleton)
 - [Structural](#structural)
-  - [Abstract Document](#abstract-document)
   - [Adapter](#adapter)
   - [Bridge](#bridge)
   - [Composite](#composite)
@@ -27,6 +26,7 @@ One of the most resourceful implementations of design patterns in golang
   - [Flyweight](#flyweight)
   - [Private Class Data](#private-class-data)
   - [Proxy](#proxy)
+  - [Abstract Document](#abstract-document)
 - [Behavioural](#behavioural)
   - [Chain of responsibility](#chain-of-responsibility)
   - [Command](#command)
@@ -40,6 +40,7 @@ One of the most resourceful implementations of design patterns in golang
   - [Strategy](#strategy)
   - [Template Method](#template-method)
   - [Visitor](#visitor)
+  - [Acyclic Visitor](#acyclic-visitor)
 - [Microservices](#microservices)
   - [Circuit Breaker](#circuit-breaker)
   - [Publish Subscribe](#publish-subscribe)
@@ -298,10 +299,6 @@ func main() {
 
 Ease the design by identifying a simple way to realize relationships between entities.
 
-### [Abstract Document](#abstract-document)
-
-Add Property on the fly.
-
 ### [Adapter](#adapter)
 
 Match interfaces of different classes.
@@ -333,6 +330,10 @@ Restricts accessor/mutator access.
 ### [Proxy](#proxy)
 
 An object representing another object.
+
+### [Abstract Document](#abstract-document)
+
+Add Property on the fly.
 
 ## Behavioural Patterns
 
@@ -383,6 +384,10 @@ Defer the exact steps of an algorithm to a subclass.
 ### [Visitor](#visitor)
 
 Defines a new operation to a class without change.
+
+### [Acyclic Visitor](#acyclic-visitor)
+
+Allow new functions to be added to existing class hierarchies without affecting those hierarchies, and without creating the troublesome dependency cycles that are inherent to the `GOF VISITOR` Pattern.
 
 ## Microservices
 
