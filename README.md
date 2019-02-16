@@ -90,11 +90,77 @@ Separates object construction from its representation.
 
 ### Factory
 
-Create an instance of several derived classes.
+- Create an instance of several derived classes.
+- Define an interface for creating an object, but let subclasses decide which class to instantiate.
+- Factory Method lets a class defer instantiation to subclasses.
+
+#### Class Diagram
+
+![Sourcemaking-Factory-Pattern-Image](https://sourcemaking.com/files/v2/content/patterns/Factory_Method.png)
+
+![Sourcemaking-Factory-Pattern-Image-Implementation](https://sourcemaking.com/files/v2/content/patterns/Factory_Method_1.png)
+
+#### Example
+
+![factory-pattern](https://sourcemaking.com/files/v2/content/patterns/Factory_Method_example1.png)
+
+#### Notes
+
+- Make all implemented constructors private or protected.
 
 ### Object Pool
 
-Avoid expensive acquisition and release of resources by recycling objects
+- Avoid expensive acquisition and release of resources by recycling objects.
+- Significant Performance Boost
+- Used where
+  - cost of initializing a class instance is high,
+  - the rate of instantiation of a class is high,
+  - the number of instantiation in use at any one time is low.
+- Object Caching
+- A.K.A resource pool
+- the pool will be a growing pool.
+- we can restricts the number of objects created.
+- It is desirable to keep all Reusable objects that are not currently in use in the same object pool so that they can be managed by one coherent policy. To achieve this, the Reusable Pool class is designed to be a singleton class.
+- we don't want a process to have to wait for a particular object to be released, so the Object Pool also instantiates new objects as they are required, but must also implement a facility to clean up unused objects periodically.
+
+#### UML Class Diagram
+
+![connection-pool](https://sourcemaking.com/files/v2/content/patterns/Object_pool1.png)
+
+![connection-pool](https://sourcemaking.com/files/v2/content/patterns/Object_pool_example1.png)
+
+**Credits** - [SourceMaking](https://sourcemaking.com/design_patterns/object_pool)
+
+#### Example
+
+```go
+type Reusable struct{}
+
+type ReusablePool struct {
+	Objects []Reusable
+	MaxPoolSize int
+}
+
+func (r *ReusablePool) Acquire() Reusable{
+	
+	if r.Objects == nil {
+		r.Objects = make([]Reusable, MaxPoolSize)
+	}
+
+	r.Objects = r.Objects[1:]
+}
+
+func (r *ReusablePool) Release(re *Reusable) {
+
+}
+
+
+func main() {
+	reusablePool := &ReusablePool{MaxPoolSize: 10}
+	reusable := reusablePool.Acquire()
+	reusablePool.Release(reusable)
+}
+```
 
 ### Prototype
 
