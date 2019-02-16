@@ -18,6 +18,7 @@ One of the most resourceful implementations of design patterns in golang
   - [Prototype](#prototype)
   - [Singleton](#singleton)
 - [Structural](#structural)
+  - [Abstract Document](#abstract-document)
   - [Adapter](#adapter)
   - [Bridge](#bridge)
   - [Composite](#composite)
@@ -296,6 +297,10 @@ func main() {
 ## Structural Patterns
 
 Ease the design by identifying a simple way to realize relationships between entities.
+
+### [Abstract Document](#abstract-document)
+
+Add Property on the fly.
 
 ### [Adapter](#adapter)
 
