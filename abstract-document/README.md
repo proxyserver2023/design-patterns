@@ -1,4 +1,4 @@
-## Abstract Document Pattern
+# Abstract Document Pattern
 
 - flexibility of untyped languages.
 - add type safety
