@@ -571,6 +571,12 @@ Allow new functions to be added to existing class hierarchies without affecting 
 
 ![acyclic-visitor](https://github.com/iluwatar/java-design-patterns/raw/master/acyclic-visitor/etc/acyclic-visitor.png)
 
+#### Examples
+
+```go
+// TODO: implementaion
+```
+
 ## Resources
 
 - [4 Page Cheatsheet](https://loufranco.com/wp-content/uploads/2012/11/cheatsheet.pdf)
