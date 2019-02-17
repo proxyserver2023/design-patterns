@@ -370,6 +370,70 @@ Ease the design by identifying a simple way to realize relationships between ent
 
 Match interfaces of different classes.
 
+![type-c-adapter](https://cdn.shopify.com/s/files/1/1520/4366/products/SATECHI_TypeC_Multi-Port_4K_Ethernet_V2_spaceGRAY_7_700x700.jpg?v=1544723740)
+
+We can use `type-c adapter` for using our traditional `usb-2`, `usb-3`, `micro-SD`, `ethernet` devices. They are not same. We used to have different ports for these devices.
+
+But this adapter let's us work with common ground.
+
+#### UML class diagram
+
+![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/classDiagram.jpg)
+
+#### Example
+
+```go
+type RowingBoat interface{
+	row()
+}
+
+
+type FishingBoat struct {}
+func (f *FishingBoat) sail() {}
+
+
+type Captain struct {}
+func (c *Captain) row(){}
+
+
+type FishingBoatAdapter struct {
+	fishingBoat FishingBoat
+}
+
+func (f *FishingBoatAdapter) row() {
+	boat.sail()
+}
+```
+
+```go
+type TwoPinCharger interface {
+	TwoPinCharge()
+}
+
+type TwoPinChargerMobile struct {}
+func (t *TwoPinChargerMobile) TwoPinCharge() {}
+
+
+type ThreePinCharger interface {
+	ThreePinCharge()
+}
+func (t *ThreePinChargerMobile) ThreePinCharge() {}
+
+type TwoPin2ThreePinChargerAdapter struct {
+	twoPinCharger TwoPinCharger
+}
+func (t *TwoPin2ThreePinChargerAdapter) ThreePinCharge() {
+	twoPinCharger.TwoPinCharge()
+}
+
+// TODO: fix implementation using Class Diagram
+// To use the adapter
+twoPinCharger := &TwoPinChargerMobile{}
+adapter := &TwoPin2ThreePinChargeAdapter{twoPinCharger}
+adapter.ThreePinCharge()
+
+```
+
 ### [Bridge](#bridge)
 
 Separate an object's interface from it's implementation
@@ -554,9 +618,6 @@ The **multiplicity** of an association end is the number of possible instances o
 
 ![uml-arrows](./images/uml-arrows.gif)
 
-
-
-
 ## Others
 
 ### [Abstract Document](#abstract-document)
@@ -586,3 +647,4 @@ Allow new functions to be added to existing class hierarchies without affecting 
 
 - [Sourcemaking](https://sourcemaking.com/uml)
 - [Randy Miller](http://edn.embarcadero.com/article/31863)
+- [@iluwatar](https://github.com/iluwatar/java-design-patterns/blob/master/adapter/README.md)
