@@ -49,10 +49,11 @@ One of the most resourceful implementations of design patterns in golang
   - [Acitivity Diagram](#activity-diagram)
   - [Sequence Diagram](#sequence-diagram)
   - [Class Diagram](#class-diagram)
-- [Abstract Document](#abstract-document)
-- [Acyclic Visitor](#acyclic-visitor)
-- [Resources](#resources)
-- [Credits](#credits)
+- [Others](#others)
+  - [Abstract Document](#abstract-document)
+  - [Acyclic Visitor](#acyclic-visitor)
+  - [Resources](#resources)
+  - [Credits](#credits)
 
 ## SOLID Principles
 
@@ -553,13 +554,22 @@ The **multiplicity** of an association end is the number of possible instances o
 
 ![uml-arrows](./images/uml-arrows.gif)
 
-## [Abstract Document](#abstract-document)
+
+
+
+## Others
+
+### [Abstract Document](#abstract-document)
 
 Add Property on the fly.
 
-## [Acyclic Visitor](#acyclic-visitor)
+### [Acyclic Visitor](#acyclic-visitor)
 
 Allow new functions to be added to existing class hierarchies without affecting those hierarchies, and without creating the troublesome dependency cycles that are inherent to the `GOF VISITOR` Pattern.
+
+#### UML Class Diagram
+
+![acyclic-visitor](https://github.com/iluwatar/java-design-patterns/raw/master/acyclic-visitor/etc/acyclic-visitor.png)
 
 ## Resources
 
