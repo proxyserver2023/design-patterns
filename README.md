@@ -10,6 +10,12 @@ One of the most resourceful implementations of design patterns in golang
   - [Liskov Substitution Principle](#liskov-substitution-principle)
   - [Interface Segregation Principle](#interface-segregation-principle)
   - [Dependency Inversion Principle](#dependency-inversion-principle)
+- [UML](#uml)
+  - [Requirement Specification](#requirement-specification)
+  - [Use case](#use-case)
+  - [Acitivity Diagram](#activity-diagram)
+  - [Sequence Diagram](#sequence-diagram)
+  - [Class Diagram](#class-diagram)
 - [Creational](#creational)
   - [Abstract Factory](#abstract-factory)
   - [Builder](#builder)
@@ -43,17 +49,12 @@ One of the most resourceful implementations of design patterns in golang
   - [Circuit Breaker](#circuit-breaker)
   - [Publish Subscribe](#publish-subscribe)
   - [Service Registry](#service-registry)
-- [UML](#uml)
-  - [Requirement Specification](#requirement-specification)
-  - [Use case](#use-case)
-  - [Acitivity Diagram](#activity-diagram)
-  - [Sequence Diagram](#sequence-diagram)
-  - [Class Diagram](#class-diagram)
 - [Others](#others)
   - [Abstract Document](#abstract-document)
   - [Acyclic Visitor](#acyclic-visitor)
-  - [Resources](#resources)
-  - [Credits](#credits)
+- [AntiPatterns](#antipatterns)
+- [Resources](#resources)
+- [Credits](#credits)
 
 ## SOLID Principles
 
@@ -637,6 +638,24 @@ Allow new functions to be added to existing class hierarchies without affecting 
 ```go
 // TODO: implementaion
 ```
+
+## AntiPatterns
+
+Commonly occuring solutions to a problem, that generates decidedly negative consequences.
+
+### When it happens
+
+When Manager or Developer apply good design patterns into wrong context.
+
+### How to mitigate
+
+Antipatterns provide a detailed plan to reverse the situation.
+
+### Types
+
+- Software Development Antipatterns
+- Software Architecture Antipatterns
+- Software Product Management Antipatterns
 
 ## Resources
 
