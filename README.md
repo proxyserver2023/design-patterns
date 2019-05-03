@@ -5,7 +5,7 @@ Primary Languages - `Golang`, `Python`
 
 ## TOC
 
-- [SOLID Principles](#solid-principles)
+- [SOLID Principles](./solid)
   - [Single Responsibility Principle](#single-responsibility-principle)
   - [Open Closed Principle](#open-closed-principle)
   - [Liskov Substitution Principle](#liskov-substitution-principle)
