@@ -9,7 +9,7 @@
   - [Interface Segregation Principle](#interface-segregation-principle)
   - [Dependency Inversion Principle](#dependency-inversion-principle)
 - [Implementations](#implementations)
-  - [Python Implementations](./python-implementation/solid)
+  - [Python](./python/solid)
 
 ## SOLID Principles
 
