@@ -2,22 +2,19 @@
 
 ## TOC
 
-- [UML](#uml)
-  - [Requirement Specification](#requirement-specification)
-  - [Use case](#use-case)
-  - [Acitivity Diagram](#activity-diagram)
-  - [Sequence Diagram](#sequence-diagram)
-  - [Class Diagram](#class-diagram)
+- [Requirement Specification](#requirement-specification)
+- [Use case](#use-case)
+- [Acitivity Diagram](#activity-diagram)
+- [Sequence Diagram](#sequence-diagram)
+- [Class Diagram](#class-diagram)
 
-## UML
-
-### Requirement Specification
+## Requirement Specification
 
 - Who is specifying it
 - For Whom this is being specified
 - What is specified.
 
-### Use case
+## Use case
 
 What the system does for a user.
 
@@ -27,7 +24,7 @@ What the system does for a user.
     ![Use case example](http://edn.embarcadero.com/article/images/31863/usecaseactorno3.gif)
     ![Use case communication](http://edn.embarcadero.com/article/images/31863/actorsmultipleno3d.gif)
 
-#### Constructing Use Case
+### Constructing Use Case
 
 - Collect information sources - How Am I supposed to know that?
 - Identify potential actors - Which partners and customers use the goods and services of the business system
@@ -40,13 +37,13 @@ What the system does for a user.
 - Model Relationships between business use cases - What activities are conducted repeatedly?
 - Verify the view - Is everything correct?
 
-### Activity Diagram
+## Activity Diagram
 
 ![Activity Diagram](https://sourcemaking.com/files/sm/images/uml/img_33.jpg)
 
 ![Activity Diagram for Passenger checks in](https://sourcemaking.com/files/sm/images/uml/img_34.jpg)
 
-#### Constructing activity diagrams in the external view
+### Constructing activity diagrams in the external view
 
 - collect information sources - how am i supposed to know that?
 - find activities and actions - what has to be done when actors draw upon offered goods and services?
@@ -55,11 +52,11 @@ What the system does for a user.
 - refine activitiess - do any other activity diagrams have to be added?
 - verify the view - is everything correct?
 
-### Sequence Diagrams
+## Sequence Diagrams
 
 ![elements-of-the-sequence-diagram](https://sourcemaking.com/files/sm/images/uml/img_55.jpg)
 
-#### Constructing Sequence Diagram
+### Constructing Sequence Diagram
 
 - Designate actors and business system—Who is taking part?
 - Designate initiators—Who starts interactions?
@@ -70,7 +67,7 @@ What the system does for a user.
 
 ![High Level Sequence Diagram](https://sourcemaking.com/files/sm/images/uml/img_63.jpg)
 
-### Class Diagram
+## Class Diagram
 
 ![Class Notations](https://www.tutorialspoint.com/uml/images/notation_class.jpg)
 
@@ -95,10 +92,10 @@ The **multiplicity** of an association end is the number of possible instances o
 - `1` -> exactly one instance
 - `1..*` -> at least one instance
 
-#### Class Diagram Concepts
+### Class Diagram Concepts
 
 ![class-diagram-concepts](./images/class-diagram-concepts.gif)
 
-#### Uml Arrow Signs
+### Uml Arrow Signs
 
 ![uml-arrows](./images/uml-arrows.gif)
