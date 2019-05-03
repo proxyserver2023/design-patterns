@@ -95,8 +95,8 @@ What the system does for a user.
 - **Scenario**:
   - A patient calls the clinic to make an appointment for a yearly checkup.
   - The receptionist finds the nearest empty slot in the appointment book and schedules the appointment in that time slot.
-  ![Use case example](http://edn.embarcadero.com/article/images/31863/usecaseactorno3.gif)
-  ![Use case communication](http://edn.embarcadero.com/article/images/31863/actorsmultipleno3d.gif)
+    ![Use case example](http://edn.embarcadero.com/article/images/31863/usecaseactorno3.gif)
+    ![Use case communication](http://edn.embarcadero.com/article/images/31863/actorsmultipleno3d.gif)
 
 #### Constructing Use Case
 
@@ -162,7 +162,7 @@ A **navigability** arrow on an association shows which direction the association
 The **multiplicity** of an association end is the number of possible instances of the class associated with a single instance of the other end. Multiplicities are single numbers or ranges of numbers. In our example, there can be only one Customer for each Order, but a Customer can have any number of Orders.
 
 - `0..1` -> zero or one instance. The notation `n..m` indicates `n to m` instances.
-- `0..*  or  *` -> no limit on the number of instances (including none).
+- `0..* or *` -> no limit on the number of instances (including none).
 - `1` -> exactly one instance
 - `1..*` -> at least one instance
 
@@ -238,7 +238,7 @@ type ReusablePool struct {
 }
 
 func (r *ReusablePool) Acquire() Reusable{
-	
+
 	if r.Objects == nil {
 		r.Objects = make([]Reusable, MaxPoolSize)
 	}
@@ -271,7 +271,7 @@ For instance, an object is to be created after a costly database operation. We c
 
 **Example - 1**: generate different configuration files depending on our needs
 
-``` go
+```go
 package configurer
 
 type Config struct {
@@ -309,7 +309,7 @@ We want to be able to mutate the object without affecting its initial instance. 
 
 If app needs one and only one instance of an object.
 
-``` go
+```go
 type privateStructure struct {
 	value string
 }
@@ -331,43 +331,43 @@ func GetSingletonInstance() privateStructure {
 
 A thread-safe solution might be
 
-``` go
+```go
 var mu sync.Mutex
 
 func GetInstance() *singleton {
 	mu.Lock()
 	defer mu.Unlock()
-	
+
 	if instance == nil {
 		instance = &singleton{}
 	}
-	
+
 	return instance
-	
+
 }
 ```
 
 `Check-Lock-Check` Pattern
 
-``` go
+```go
 func GetInstance() *singleton {
-	
+
 	if instance == nil {
 		mu.Lok()
 		defer mu.Unlock()
-		
+
 		if instance == nil {
 			instance = &singleton{}
 		}
 	}
-	
+
 	return instance
 }
 ```
 
 But using the sync/atomic package, we can atomically load and set a flag that will indicate if we have initialized or not our instance.
 
-``` go
+```go
 import sync
 import sync/atomic
 
@@ -377,10 +377,10 @@ func Getinstance() *singleton{
 	if atomic.LoadUInt32(&initialized) == 1 {
 		return instance
 	}
-	
+
 	mu.Lock()
 	defer mu.Unlock()
-	
+
 	if initialized == 0 {
 		instance = &singleton{}
 		atomic.StoreUint32(&initialized, 1)
@@ -390,7 +390,7 @@ func Getinstance() *singleton{
 
 Idiomatic singleton approach in go
 
-``` go
+```go
 package singleton
 
 import (
@@ -413,7 +413,7 @@ func GetInstance() *singleton {
 
 Example Code
 
-``` go
+```go
 package main
 
 import (
@@ -465,7 +465,7 @@ Ease the design by identifying a simple way to realize relationships between ent
 
 Match interfaces of different classes.
 
-![type-c-adapter](https://cdn.shopify.com/s/files/1/1520/4366/products/SATECHI_TypeC_Multi-Port_4K_Ethernet_V2_spaceGRAY_7_700x700.jpg?v=1544723740)
+![type-c-adapter](./images/type-c-adapter.jpg)
 
 We can use `type-c adapter` for using our traditional `usb-2`, `usb-3`, `micro-SD`, `ethernet` devices. They are not same. We used to have different ports for these devices.
 
