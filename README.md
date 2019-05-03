@@ -1,6 +1,7 @@
-# Design Patterns in Golang
+# Design Patterns
 
-One of the most resourceful implementations of design patterns in golang
+One of the most resourceful implementations of design patterns.
+Primary Languages - `Golang`, `Python`
 
 ## TOC
 
